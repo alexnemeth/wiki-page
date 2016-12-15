@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2016 by alexnemeth (http://jsbin.com/qaleju/45/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta>
+  <meta>
+  <title>Communist Mutants from Space - Wikipedia</title>
+<style id="jsbin-css">
+body{
+   font-family:sans-serif;
+   font-size:100%;
+}
+
+.no-avaible{
+  display:none;
+}
+
+#logo{
+  padding:0.6em;
+  margin-top:-1em;
+}
+
+#right-top-rectangle{
+  position:relative;
+  bottom:10em;
+  width:auto;
+  height:80px;
+  margin-left:11.2em;
+  margin-right:1.7em;
+}
+
+
+li{
+  list-style:none;
+}
+
+a:link{
+  color:#0645ad;
+  text-decoration:none;
+}
+
+a:visited{
+  color:#0b008e;
+}
+
+#p-not-logged{
+  color:#aaa;
+}
+
+#personal-line{
+  float:right;
+  height:25px;
+  font-size:12px;
+  width:auto;
+}
+
+#button-line{
+  float:right;
+  height:25px;
+  width:100%;
+}
+
+.p-row{
+  float:left;
+  margin:-1em 0.4em 0em 0em;
+}
+
+.left-button{
+  float:left;
+  padding:0.4em;
+  font-size:14px;
+  margin-top:1em;
+  border-left:1px;
+  border-right:0px;
+  border-top:0px;
+  border-bottom:0px;
+  border-style:solid;
+  border-color:#a7d7f9;
+}
+
+#btn-article{
+  margin-left:-1.4em;
+}
+
+#btn-talk{
+  border-right:1px;
+  border-style:solid;
+  border-color:#a7d7f9;
+  background-color:#eaf3f8;
+}
+
+.right-button{
+  float:right;
+  padding:0.4em;
+  font-size:14px;
+  margin-top:1em;
+  border-left:1px;
+  border-right:0px;
+  border-top:0px;
+  border-bottom:0px;
+  border-style:solid;
+  border-color:#a7d7f9
+}
+
+#btn-edit{
+  background-color:#eaf3f8;
+}
+
+#btn-view-history{
+  margin-right:0.5em;
+  border-right:1px;
+  border-style:solid;
+  border-color:#a7d7f9;
+  background-color:#eaf3f8;
+}
+
+#wiki-search{
+  margin:1em 0em 0em 0em;
+  border:1px solid #aaa;
+  width:310px;
+  text-align:right;
+  float:right;
+}
+
+#big-rectangle{
+  position:relative;
+  bottom:10em;
+  margin:-0.9em 0em 0em 10em;
+  height:auto;
+  width:auto%;
+  padding: 0em 1.4em 0.6em 1.4em;
+  border-width:1px 0px 1px 1px;
+  border-style:solid;
+  border-color:#a7d7f9;
+}
+
+#rectangle-article{
+  background-color:white;
+  text-align:left;
+}
+
+#table-title{
+  text-align:center;
+  font-size:14px;
+  font-weight:bold;
+  font-style:italic;
+  line-height:20px;
+}
+
+#table{
+  border:1px solid #aaa;
+  float:right;
+  padding:3.6px 14px 0px 14px;
+  margin:1.3em 0em 1em 1em;
+  font-size:90%;
+}
+
+figcaption{
+  text-align:center;
+  font-size:12px;
+}
+
+.table-heads{
+  font-weight:bold;
+  line-height:1.5em;
+  width:50px;
+}
+
+.table-data{
+  line-height:1.5em;
+  float:left;
+  margin-left:-6.5em;
+}
+
+#wiki-commercial {
+  line-height:20px;
+  font-size:12px;
+  font-style:normal;
+  font-family:arial;
+  margin-top:-1em;
+}
+
+h1{
+  font-family:Linux Libertine, Georgia, Times, serif;
+  font-style:italic;
+  font-weight:normal;
+  font-size:1.8em;
+  border-bottom: 1px solid #aaa;
+  line-height:39px;
+}
+
+#contents-list{
+  border: 1px solid #aaa;
+  padding:0.4em 0.4em 0em 0.4em;
+  width:125px;
+  text-align:left;
+  font-size:13px;
+  font-weight:initial;
+  line-height:1.6em;
+  margin-bottom:-0.5em;
+}
+
+.con-title{
+  font-weight:bold;
+  text-align:center;
+}
+
+.h2-line{
+  border:none;
+}
+
+#game-title{
+  font-style:italic;
+  font-weight:bold;
+}
+
+h2{
+  font-size:21px;
+  border-bottom:1px solid #aaa;
+  font-family: 'Linux Libertine', Georgia, Times, serif;
+  line-height:1.3em;
+  font-weight:normal;
+  border-bottom-width:100%;
+  margin:1em 0em 1em 0em;
+}
+
+hr{
+  margin:0em 0em -0.5em 0em;
+  background-color:#aaa;
+  color:#aaa;
+}
+
+#game-menu-head{
+  font-size:17px;
+  line-height:1.6;
+  margin-top:5px;
+  padding-top:8px;
+  margin-bottom:0.5em;
+}
+
+.bottom-head{
+  margin:1em 0em 0.5em 0em;
+}
+
+.bracket-1{
+  font-size:13px;
+  font-weight:normal;
+  padding-left:0.8em;
+  margin-right:-0.6em;
+}
+
+.edit-option{
+  font-size:13px;
+  margin-left:0.5em;
+  font-weight:normal;
+}
+
+.bracket-2{
+  font-size:13px;
+  font-weight:normal;
+  margin-right:-0.6em;
+  
+}
+
+#game-pic {
+  border:1px solid #aaa;
+  font-size:0.77em;
+  width:180px;
+  padding:0.25em;
+  text-align:left;
+  float:left;
+  margin:0.5em 1.5em 1.5em 0em;
+}
+
+.icon{
+  float:right;
+}
+
+#game-menu{
+  text-indent:2em;
+}
+p{
+  font-family:sans-serif;
+  font-size:14px;
+  line-height:20px;
+  margin:0.5em 0em 0.5em 0em;
+}
+
+.ref-p{
+  font-size:13px;
+  line-height:1.26em;
+  padding-left:2em;
+}
+
+.external-p{
+  line-height:1.375em;
+}
+
+.point{
+  padding:0em 0.5em 0em 0.5em;
+}
+
+.external-li{
+  font-style:italic;
+  color:#636;
+}
+
+#references-1 a:hover{
+ border:2px solid #0b0080;
+}
+
+#references-2 a:hover{
+  border:2px solid #0b0080;
+}
+
+#category-title{
+  margin-left:0.3em;
+}
+
+#category-list{
+  padding: 0.5em 0em 0.5em 0em;
+  border:1px solid #aaa;
+  font-size:14px;
+}
+
+#category-list li{
+  display:inline;
+  text-align:center;
+}
+
+.category-border{
+  border-right:1px solid #aaa;
+  padding:0em 0.5em 0em 0.5em;
+}
+
+#category-star{
+  padding-left:0.5em;
+}
+
+footer{
+  margin: -11.6em 2em 2em 14em;
+  padding: 1em 0em 0.5em 0em;
+  font-size:13px;
+}
+
+footer p{
+  font-size:11px;
+}
+
+ol{
+  padding-left:0em;
+}
+
+.footer-links{
+  padding-right:0.75em;
+  font-size:11px;
+  display:inline;
+}
+
+.wiki-pic{
+  float:right;
+  padding-left:0.5em;
+}
+
+.navigation-column{
+  top:10em;
+  position:absolute;
+  font-size:16px;
+  margin-left:0.5em;
+  padding-top:1em;
+}
+
+h4{ 
+  border-top:1px;
+  border-style:solid hidden hidden hidden;
+  border-color:#aaa;
+  font-weight:normal;
+  font-size:14px;
+}
+
+#lista{
+  position:absolute;
+  line-height:1.2em;
+  width:7em;
+  padding-left:1em;
+  padding-right:1em;
+}
+
+#navigation-head{
+  color:#4d4d4d;
+  padding-top:0.4em;
+  margin-bottom:0.1em;
+  margin-left:-1em;
+  font-size:13px;
+  position:relative;
+}
+
+.first-list{
+  font-size:12px;
+  margin-left:-0.7em;
+}
+
+.nav-titles{
+  font-size:12px;
+}
+
+.last-title{
+  margin-bottom:-1em;
+  font-size:12px;
+}
+
+.lang-button{
+  float:right;
+  margin-right:-0.5em;
+}
+
+#languages-button{
+  margin-top: -1.1em;
+}
+
+#edit-links a:link{
+ color:gray;
+}
+</style>
+</head>
+<body>
+  <div id="logo">
+    <a href="https://en.wikipedia.org/wiki/Main_Page" title="Visit the Main Page">
+      <img src="https://en.wikipedia.org/static/images/project-logos/enwiki.png"></img>
+    </a> 
+  </div>
+  <div id="right-top-rectangle">
+    <div id="personal-line">
+      <ul id="all-link-top-rectangle">
+        <li id="p-not-logged" class="p-row">
+          <img src="data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20width%3D%2212px%22%20height%3D%2213.836px%22%20viewBox%3D%220%200%2012%2013.836%22%20enable-background%3D%22new%200%200%2012%2013.836%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cpath%20fill%3D%22%23777777%22%20d%3D%22M1.938%2C6.656c-1.32%2C1.485-1.47%2C3.15-0.97%2C4.25c0.323%2C0.707%2C0.78%2C1.127%2C1.313%2C1.375%0A%09c0.496%2C0.229%2C1.074%2C0.273%2C1.658%2C0.282c0.023%2C0%2C0.04%2C0.03%2C0.062%2C0.03h4.187c0.61%2C0%2C1.225-0.125%2C1.75-0.405%0A%09c0.527-0.28%2C0.961-0.718%2C1.188-1.376c0.335-0.964%2C0.175-2.529-1.094-4.03C9.094%2C7.954%2C7.68%2C8.719%2C6.065%2C8.719%0A%09c-1.677%2C0-3.182-0.812-4.125-2.063H1.938z%22%2F%3E%0A%3Cpath%20fill%3D%22%23777777%22%20d%3D%22M6.063%2C0c-1.89%2C0-3.595%2C1.674-3.594%2C3.563C2.467%2C5.45%2C4.173%2C7.155%2C6.06%2C7.155%0A%09c1.89%2C0%2C3.564-1.705%2C3.563-3.593C9.625%2C1.673%2C7.95%2C0%2C6.063%2C0L6.063%2C0z%22%2F%3E%0A%3C%2Fsvg%3E%0A">
+            Not logged in</img>
+        </li>
+        <li id="p-talk" class="p-row">
+          <a href="https://en.wikipedia.org/wiki/Special:MyTalk"
+             title="Discussion about edits from this IP address [alt-shift-n]"
+             accesskey="n">Talk</a>
+        </li>
+        <li id="p-contributions" class="p-row">
+          <a href="https://en.wikipedia.org/wiki/Special:MyContributions"
+             title="A list of edits made from this IP address [alt-shift-y]"
+             accesskey="y">Contributions</a>
+        </li>
+        <li id="p-create-account" class="p-row">
+          <a href="https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=Communist+Mutants+from+Space">
+            Create account</a>
+        </li>
+        <li id="p-log-in" class="p-row">
+          <a href="https://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Communist+Mutants+from+Space">
+            Log in</a>
+        </li>
+      </ul>
+    </div>
+    <div id="button-line">
+        <li id="btn-article" class="left-button">
+          <a href="#" title="View the content page [alt-shift-c]"
+             acceskey="c">Article</a>
+        </li>
+        <li id="btn-talk" class="left-button">
+          <a href="https://en.wikipedia.org/wiki/Talk:Communist_Mutants_from_Space"
+             title="Discussion about the concent page [alt-shift-t]"
+             accesskey="t">Talk</a>
+        <li id="wiki-search">
+          <a href="https://en.wikipedia.org/w/index.php?search=&title=Special%3ASearch&go=Go">Search Wikipedia
+            <img src="https://cdn.shopify.com/s/files/1/0703/1523/t/5/assets/search_icon_small.png?18116379234075260001">
+          </a>
+        </li>
+        <li id="btn-view-history" class="right-button">
+          <a href="https://en.wikipedia.org/w/index.php?title=Communist_Mutants_from_Space&action=history"
+             title="Past revisions of this page [alt-shift-h]" accesskey="h">View history</a>
+        </li>
+        <li id="btn-edit" class="right-button">
+          <a href="https://en.wikipedia.org/w/index.php?title=Communist_Mutants_from_Space&action=edit"
+            title="Edit this page [alt-shift-e]" accesskey="e">Edit</a>
+        </li>
+        <li id="btn-read" class="right-button">
+          <a href="#">Read</a>
+        </li>
+    </div>
+  </div>
+  <div id="big-rectangle">
+    <div>
+      <div id="rectangle-article">
+        <div>
+          <h1>Communist Mutants from Space</h1>
+            <p id="wiki-commercial">From Wikipedia, the free encyclopedia</p>
+        </div>
+        <div>
+          <table id="table">
+            <tr>
+              <th id="table-title">Communist Mutants from Space</th>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://en.wikipedia.org/wiki/File:Communist_Mutants_from_Space_cover.jpg">
+                  <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/85/Communist_Mutants_from_Space_cover.jpg/220px-Communist_Mutants_from_Space_cover.jpg"
+                       style="width:220px; height:306px;"
+                       title="Communist Mutants from Space"></img>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <figcaption>Cover art</figcaption>
+              </td>
+            </tr>
+            <tr>
+              <td class="table-heads">
+                <a href="https://en.wikipedia.org/wiki/Video_game_developer"
+                   title="Video game developer">Developer(s)</a>
+              </td>
+              <td class="table-data">
+                <a href="https://en.wikipedia.org/wiki/Starpath"
+                   title="Starpath">Starpath</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="table-heads">
+                <a href="https://en.wikipedia.org/wiki/Computing_platform"
+                   title="Computing platforms">Platform(s)</a>
+              </td>
+              <td class="table-data">
+                <a href="https://en.wikipedia.org/wiki/Atari_2600"
+                   title="Atari 2600">Atari 2600</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="table-heads">
+                Relase date(s)</td>
+              <td class="table-data">
+                <a href="https://en.wikipedia.org/wiki/North_America"
+                   title=North America>NA:</a>1982
+              </td>
+            </tr>
+            <tr>
+              <td class="table-heads">
+                <a href="https://en.wikipedia.org/wiki/Video_game_genre"
+                   title="Video game genre">Genre(s)</a>
+              </td>
+              <td class="table-data">
+                <a href="https://en.wikipedia.org/wiki/Shoot_%27em_up#Fixed_shooters"
+                   title="Shoot 'em up">Fixed shooter</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="table-heads">
+                Mode(s)
+              </td>
+              <td class="table-data">
+                <a href="https://en.wikipedia.org/wiki/Single-player_video_game"
+                   title="Single-player video game">Single-player</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p>
+          <span id="game-title">Communist Mutants from Space</span>
+          is a
+          <a href="https://en.wikipedia.org/wiki/Fixed_shooter"
+             title="Fixed shooter">fixed shooter</a>
+          video game created in
+          <a href="https://en.wikipedia.org/wiki/1982_in_video_gaming"
+             title="1982 in video gaming">1982</a>
+          by
+          <a href="https://en.wikipedia.org/wiki/Starpath"
+             title="Starpath">Starpath</a>
+          (formerly known as Arcadia) for the
+          <a href="https://en.wikipedia.org/wiki/Atari_2600"
+             title="Atari 2600">Atari 2600</a>
+          home video game console and the
+          <a href="https://en.wikipedia.org/wiki/Starpath_Supercharger"
+             title="Starpath Supercharger">Starpath Supercharger</a>
+          cassette accessory.
+          <span>
+            <sup id="references-1">
+              <a href="https://en.wikipedia.org/wiki/Communist_Mutants_from_Space#references-1"
+                 title="I break for Arcadians:Entertainment abounds in a gaggle of games, Page 26, InfoWorld, 27 Jun 1983,"
+                 >[1]</a>
+            </sup>
+          </span>
+        </p>
+        <div id="contents-list">
+            <ol>
+              <span>Contents<span>
+              <span class="con-title">[hide]</span>
+              <li>1
+                <a href="https://en.wikipedia.org/wiki/Communist_Mutants_from_Space#Story">
+                   Story</a>
+              </li>
+              <li>2
+                <a href="https://en.wikipedia.org/wiki/Communist_Mutants_from_Space#Gameplay">
+                   Gameplay</a>
+              </li>  
+              <li id="game-menu">2.1
+                <a href="https://en.wikipedia.org/wiki/Communist_Mutants_from_Space#Game_menu">
+                   Game menu</a>
+              </li>
+              <li>3
+                <a href="https://en.wikipedia.org/wiki/Communist_Mutants_from_Space#Easter_egg">
+                   Easter Egg</a>
+              </li>
+              <li>4
+                <a href="https://en.wikipedia.org/wiki/Communist_Mutants_from_Space#References">
+                   References</a>
+              </li>
+              <li>5
+                <a href="https://en.wikipedia.org/wiki/Communist_Mutants_from_Space#External_links">
+                   External links</a>
+              </li>
+            </ol>
+        </div>
+        <h2 class="h2-line">Story
+          <span class="bracket-1">[</span>
+          <a href="https://en.wikipedia.org/w/index.php?title=Communist_Mutants_from_Space&action=edit&section=1"
+                class="edit-option" title="Edit Section: Game play">edit</a>
+          <span class="bracket-2">]</span>
+          <hr></hr>
+        </h2>
+          <p>
+            Aliens from the
+            <a href="https://en.wikipedia.org/wiki/Communism"
+               title="Communism">communist</a>
+            planet of Rooskee are invading peaceful, democratic planets
+            and turning their inhabitants into "Communist Mutants." The
+            communist mutant armies are controlled by the Mother Creature,
+            a strange alien who has gone mad due to irradiated
+            <a href="https://en.wikipedia.org/wiki/Vodka" title="Vodka">vodka</a>
+            .
+          </p>
+        <h2 class="h2-line">Game play
+          <span class="bracket-1">[</span>
+          <a href="https://en.wikipedia.org/w/index.php?title=Communist_Mutants_from_Space&action=edit&section=1"
+                class="edit-option" title="Edit Section: Game play">edit</a>
+          <span class="bracket-2">]</span>
+          <hr></hr>
+        </h2>
+          <div id="game-pic">
+             <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Commiemutants.png/180px-Commiemutants.png">
+             <figcaption>The player must destroy the
+               <img src="data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%20standalone%3D%22no%22%3F%3E%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2011%2015%22%20width%3D%2215%22%20height%3D%2211%22%3E%0A%20%20%20%20%3Cg%20id%3D%22magnify-clip%22%20fill%3D%22%23fff%22%20stroke%3D%22%23000%22%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20id%3D%22bigbox%22%20d%3D%22M1.509%201.865h10.99v7.919h-10.99z%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20id%3D%22smallbox%22%20d%3D%22M-1.499%206.868h5.943v4.904h-5.943z%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A"
+               title="Enlarge" class="icon"
+                 <a href="https://en.wikipedia.org/wiki/Communist_Mutants_from_Space#/media/File:Commiemutants.png"></a>
+                 Mother Creature without being destroyed by the mutants and their bombs.</figcaption>
+          </div>
+          <p id=game-play-text>
+            The player starts off with three reserve cannons. The object is to
+            destroy the mutants aliens and, most importantly, the Mother Creature.
+            The mutants hatch from moving eggs at the top of the screen. Because
+            the Mother Creature replenishes eggs when they hatch or are destroyed,
+            it must be defeated before the player can advance to the next wave.
+            If a mutant or a bomb thrown by a mutant comes into contact with the
+            cannon, the cannon will be destroyed and a reserve must be called up.
+            A new cannon is awarded on every other wave.
+          </p>
+        <h3 id="game-menu-head" >Game menu
+          <span class="bracket-1">[</span>
+          <a href="https://en.wikipedia.org/w/index.php?title=Communist_Mutants_from_Space&action=edit&section=1"
+                class="edit-option" title="Edit Section: Game play">edit</a>
+          <span class="bracket-2">]</span>
+        </h3>
+          <p>
+            The menu allows a variety of gameplay changes; for example,
+            the player may toggle the shield option on or off. If activated,
+            "shield" mode allowed a player to press down on the joystick to
+            become invincible for a short period (only one shield was allotted
+            per level). Another feature was the "time warp," which allowed the
+            player to press up on the joystick to temporarily slow down the
+            passage of time for his opponents (i.e., they move slower than usual).
+            Additionally, the type of shot fired could be changed by activating
+            the "penetrating fire" option (which enhanced the beam fired so that
+            it could withstand hitting two mutants rather than a single one)
+            and/or the "guided fire" option (which caused the beam to be moved
+            with the joystick rather than firing in a straight line).
+          </p>
+          <p>
+            The menu also allowed for multiple players (up to four) to
+            be entered into the game. Players one and three shared the
+            first joystick while players two and four shared the second.
+          </p>
+        <h2 class="bottom-head">Easter egg
+          <span class="bracket-1">[</span>
+          <a href="https://en.wikipedia.org/w/index.php?title=Communist_Mutants_from_Space&action=edit&section=1"
+                class="edit-option" title="Edit Section: Game play">edit</a>
+          <span class="bracket-2">]</span>
+        </h2>
+          <p>
+            Steven H. Landrum, the project's programmer, hid an
+          <a href="https://en.wikipedia.org/wiki/Easter_egg_(virtual)"
+             title="Easter egg (virtual)">easter egg</a>
+             in the game in which holding fire during power-on of the
+            Atari 2600 would cause the "HI" on the high scores screen
+            to change to "SHL.
+          <span>
+            <sup id="references-2">
+              <a href="https://en.wikipedia.org/wiki/Communist_Mutants_from_Space#cite_note-Chris_Federico-2"
+                 >[2]</a>
+            </sup>
+          </span>
+          </p>
+        <h2 class="bottom-head">References
+          <span class="bracket-1">[</span>
+          <a href="https://en.wikipedia.org/w/index.php?title=Communist_Mutants_from_Space&action=edit&section=1"
+                class="edit-option" title="Edit Section: Game play">edit</a>
+          <span class="bracket-2">]</span>
+        </h2>
+          <p class="ref-p">1.
+            <a href="https://en.wikipedia.org/wiki/Communist_Mutants_from_Space#references-1">^</a>
+            <a href="https://books.google.com.au/books?id=yy8EAAAAMBAJ&lpg=PA26&dq=Supercharger%20starpath&pg=PA26#v=onepage&q=Supercharger%20starpath&f=false" id="refernce-1">
+               I break for Arcadians:Entertainment abounds in a gaggle of games
+              <img src="data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%20standalone%3D%22no%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%3E%3Cpath%20fill%3D%22%23fff%22%20stroke%3D%22%2306c%22%20d%3D%22M1.5%204.518h5.982V10.5H1.5z%22%2F%3E%3Cpath%20d%3D%22M5.765%201H11v5.39L9.427%207.937l-1.31-1.31L5.393%209.35l-2.69-2.688%202.81-2.808L4.2%202.544z%22%20fill%3D%22%2306f%22%2F%3E%3Cpath%20d%3D%22M9.995%202.004l.022%204.885L8.2%205.07%205.32%207.95%204.09%206.723l2.882-2.88-1.85-1.852z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fsvg%3E">
+            </a>
+            , Page 26, InfoWorld, 27 Jun 1983,
+          </p>
+          <p class="ref-p">2.
+            <a href="https://en.wikipedia.org/wiki/Communist_Mutants_from_Space#references-2">^</a>
+            Federico, Chris.
+            <a href="http://www.geocities.com/SiliconValley/Server/2990/ocgs/issue8/eggstron.html"
+               >"The Complete 2600 Easter Egg Archive"
+              <img src="data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%20standalone%3D%22no%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%3E%3Cpath%20fill%3D%22%23fff%22%20stroke%3D%22%2306c%22%20d%3D%22M1.5%204.518h5.982V10.5H1.5z%22%2F%3E%3Cpath%20d%3D%22M5.765%201H11v5.39L9.427%207.937l-1.31-1.31L5.393%209.35l-2.69-2.688%202.81-2.808L4.2%202.544z%22%20fill%3D%22%2306f%22%2F%3E%3Cpath%20d%3D%22M9.995%202.004l.022%204.885L8.2%205.07%205.32%207.95%204.09%206.723l2.882-2.88-1.85-1.852z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fsvg%3E">
+            </a>
+            . Orphaned Computers & Game Systems. Retrieved 2007-12-28.
+            <span>
+              <sup>[
+            <a href="https://en.wikipedia.org/wiki/Wikipedia:Link_rot"
+               title="Dead link since June 2016" style="font-size:10px; font-style:italic">dead link</a>
+            ]
+              </sup>
+            </span>
+          </p>
+        <h2 class="bottom-head">External links
+          <span class="bracket-1">[</span>
+          <a href="https://en.wikipedia.org/w/index.php?title=Communist_Mutants_from_Space&action=edit&section=1"
+                class="edit-option" title="Edit Section: Game play">edit</a>
+          <span class="bracket-2">]</span>
+        </h2>
+          <p class="external-p">
+            <img src="data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20width%3D%225%22%20height%3D%2213%22%3E%0A%3Ccircle%20cx%3D%222.5%22%20cy%3D%229.5%22%20r%3D%222.5%22%20fill%3D%22%2300528c%22%2F%3E%0A%3C%2Fsvg%3E%0A" class="point">
+            <a href="http://www.atariage.com/software_page.html?SystemID=2600&SoftwareLabelID=99" class="external-li">
+              Communist Mutants from Space
+              <img src="data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%20standalone%3D%22no%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%3E%3Cpath%20fill%3D%22%23fff%22%20stroke%3D%22%2306c%22%20d%3D%22M1.5%204.518h5.982V10.5H1.5z%22%2F%3E%3Cpath%20d%3D%22M5.765%201H11v5.39L9.427%207.937l-1.31-1.31L5.393%209.35l-2.69-2.688%202.81-2.808L4.2%202.544z%22%20fill%3D%22%2306f%22%2F%3E%3Cpath%20d%3D%22M9.995%202.004l.022%204.885L8.2%205.07%205.32%207.95%204.09%206.723l2.882-2.88-1.85-1.852z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fsvg%3E">
+            </a>
+            at
+            <a href="https://en.wikipedia.org/wiki/AtariAge">Atari Age</a>
+          </p>
+          <p class="external-p">
+            <img src="data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20width%3D%225%22%20height%3D%2213%22%3E%0A%3Ccircle%20cx%3D%222.5%22%20cy%3D%229.5%22%20r%3D%222.5%22%20fill%3D%22%2300528c%22%2F%3E%0A%3C%2Fsvg%3E%0A" class="point">
+            <a href="http://www.gamefaqs.com/console/a2600/data/584639.html" class="external-li">
+              Communist Mutants from Space
+              <img src="data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%20standalone%3D%22no%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%3E%3Cpath%20fill%3D%22%23fff%22%20stroke%3D%22%2306c%22%20d%3D%22M1.5%204.518h5.982V10.5H1.5z%22%2F%3E%3Cpath%20d%3D%22M5.765%201H11v5.39L9.427%207.937l-1.31-1.31L5.393%209.35l-2.69-2.688%202.81-2.808L4.2%202.544z%22%20fill%3D%22%2306f%22%2F%3E%3Cpath%20d%3D%22M9.995%202.004l.022%204.885L8.2%205.07%205.32%207.95%204.09%206.723l2.882-2.88-1.85-1.852z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fsvg%3E">
+            </a>
+            at
+            <a href="https://en.wikipedia.org/wiki/GameFAQs">GameFAQs</a>
+          </p>
+          <p>
+            <ol id="category-list">
+              <li id="category-title">
+                <a href="https://en.wikipedia.org/wiki/Help:Category"
+                   title="Help:Category">Categories:</a>
+              </li>
+              <li class="category-border">
+                <a href="https://en.wikipedia.org/wiki/Category:1982_video_games"
+                   title="Category:1982 video games">1982 video games</a>
+              </li>
+              <li class="category-border">
+                <a href="https://en.wikipedia.org/wiki/Category:Atari_2600_games"
+                   title="Category:Atari 2600 games">Atari 2600 games</a>
+              </li>
+              <li class="category-border">
+                <a href="https://en.wikipedia.org/wiki/Category:Cold_War_video_games"
+                   title="Category:Cold War video games">Cold War video games</a>
+              </li>
+              <li class="category-border">
+                <a href="https://en.wikipedia.org/wiki/Category:Fixed_shooters"
+                   title="Category:Fixed shooters">Fixed shooters</a>
+              </li>
+              <li class="category-border">
+                <a href="https://en.wikipedia.org/wiki/Category:North_America-exclusive_video_games"
+                   title="Category:North America-exclusive video games">North America-exclusive video games</a>
+              </li>
+              <li id="category-star">
+                <a href="https://en.wikipedia.org/wiki/Category:Starpath_games"
+                   title="Category:Starpath games">Starpath games</a>
+              </li>
+            </ol>
+          </p>
+      </div> 
+    </div>                                    
+  </div>
+  <footer>
+    <p>
+      This page was last modified on 10 June 2016, at 19:17.
+    <p>
+    <p>
+      Text is available under the
+      <a href="https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">
+        Creative Commons Attribution-ShareALike Lincense;</a>
+      additional terms may apply. By using this site, you agree
+      to the
+      <a href="https://wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a>
+      and
+      <a href="https://wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy.</a>
+      Wikipedia® is a registered trademark of the
+      <a href="https://www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>
+      a non-profit organization.
+    </p>
+    <p>
+      <ol>
+        <li class="footer-links">
+          <a href="https://wikimediafoundation.org/wiki/Privacy_policy"
+             title=wmf:Privacy policy>Privacy policy
+          </a>
+        </li>
+        <li class="footer-links">
+          <a href="https://en.wikipedia.org/wiki/Wikipedia:About"
+             title="Wikipedia:About">About Wikipedia
+          </a>
+        </li>
+        <li class="footer-links">
+          <a href="https://en.wikipedia.org/wiki/Wikipedia:General_disclaimer"
+             title="Wikipedia:General disclaimer">Disclaimers
+          </a>
+        </li>
+        <li class="footer-links">
+          <a href="https://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a>
+        </li>
+        <li class="footer-links">
+          <a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a>
+        </li>
+        <li class="footer-links">
+          <a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a>
+        </li>
+        <li class="footer-links">
+          <a href="https://en.m.wikipedia.org/w/index.php?title=Communist_Mutants_from_Space&mobileaction=toggle_view_mobile">
+            Mobile view</a>
+        </li>
+        <li>
+          <a href="https://www.mediawiki.org/">
+            <img src="https://en.wikipedia.org/static/images/poweredby_mediawiki_88x31.png"
+               class="wiki-pic"
+          </a>
+        </li>
+        <li>
+          <a href="https://wikimediafoundation.org/">
+            <img src="https://en.wikipedia.org/static/images/wikimedia-button.png"
+                 class="wiki-pic"
+          </a>
+        </li>
+      </ol>
+    </p>
+  </footer>
+  <div id="left-hand-column">
+    <h2 id=navigation-menu class="no-avaible">Navigacios menu</h2>
+    <div class="navigation-column">
+      <div class="navigation" id="lista">
+        <h4 class="no-avaible">Navigation</h4>
+        <div id="navigation">
+          <li id="nav-titles" class="first-list">
+            <a href="https://en.wikipedia.org/wiki/Main_Page"
+               title="Visit the Main Page[alt-shift-z]" accesskey="z">
+              Main page</a>
+          </li>
+          <li class="nav-titles first-list">
+            <a href="https://en.wikipedia.org/wiki/Portal:Contents"
+               title="Guides to browsing Wikipedia">Contents</a>
+          </li>
+          <li class="nav-titles first-list">
+            <a href="https://en.wikipedia.org/wiki/Portal:Featured_content"
+               title="Featured content - the best of Wikipedia">Featured content</a>
+          </li>
+          <li class="nav-titles first-list">
+            <a href="https://en.wikipedia.org/wiki/Portal:Current_events"
+               title="Find background information on current events">Current events</a>
+          </li>
+          <li class="nav-titles first-list">
+            <a href="https://en.wikipedia.org/wiki/Special:Random"
+               title="Load a random article [alt-shift-x]" accesskey="x">
+              Random article</a>
+          </li>
+          <li class="nav-titles first-list">
+            <a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?
+                     utm_source=donate&utm_medium=sidebar&utm_campaign=C13_en.
+                     wikipedia.org&uselang=en" title="Support us">Donate to Wikipedia</a>
+          </li>
+          <li class="last-title first-list">
+              <a href="https://shop.wikimedia.org/"
+                 title="Visit the Wikipedia store">
+              Wikipedia Store</a>
+          </li>
+        </div>
+        <div id="interaction">
+          <h4 id="navigation-head">Interaction</h4>
+          <li class="nav-titles">
+            <a href="https://en.wikipedia.org/wiki/Help:Contents"
+               title="Guidance on how to use and edit Wikipedia">Help</a>
+          </li>
+          <li class="nav-titles">
+            <a href="https://en.wikipedia.org/wiki/Wikipedia:About"
+               title="Find out about Wikipedia">About Wikipedia</a>
+          </li>
+          <li class="nav-titles">
+              <a href="https://en.wikipedia.org/wiki/Wikipedia:Community_portal"
+                 title="About the project, what you can do, where to find things"
+                 >Community portal</a>
+          </li>
+          <li class="nav-titles">
+              <a href="https://en.wikipedia.org/wiki/Special:RecentChanges"
+                 title="A list of recent changes in the wiki [alt-shifht-r]"
+                 accesskey="r">Recent changes</a>
+          </li>
+          <li class="last-title">
+            <a href="https://en.wikipedia.org/wiki/Wikipedia:Contact_us"
+               title="How to contact to Wikipedia">Contact page</a>
+          </li>
+        </div>
+        <div id="tools">
+          <h4 id="navigation-head">Tools</h4>
+          <li class="nav-titles">
+            <a href="https://en.wikipedia.org/wiki/Special:WhatLinksHere/Communist_Mutants_from_Space"
+               title="List of all English Wikipedia pages containing links to this page [alt-shift-j]"
+               accesskey="j">What links here</a>
+          </li>
+          <li class="nav-titles">
+            <a href="https://en.wikipedia.org/wiki/Special:RecentChangesLinked/Communist_Mutants_from_Space"
+               title="Recent changes in pages linked from this page [alt-shifht-k]"
+               acceskey="k">Related changes</a>
+          </li>
+          <li class="nav-titles">
+            <a href="https://en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard"
+               title="Upload files [alt-shift-u]" accesskey="u">Upload file</a>
+          </li>
+          <li class="nav-titles">
+            <a href="https://en.wikipedia.org/wiki/Special:SpecialPages"
+               title="A list of all special pages [alt-shift-q]"
+               accesskey="q">Special pages</a>
+          </li>
+          <li class="nav-titles">
+            <a href="https://en.wikipedia.org/w/index.php?title=Communist_Mutants_from_Space&oldid=724674958"
+               title="Permament link to this revision of the page">Permament link</a>
+          </li>
+          <li class="nav-titles">
+            <a href="https://en.wikipedia.org/w/index.php?title=Communist_Mutants_from_Space&action=info"
+               title="More information about this page">Page information</a>
+          </li>
+          <li class="nav-titles">
+            <a href="https://www.wikidata.org/wiki/Q5154312"
+               title="Link to connected data repository item [alt-shift-g]"
+               accesskey="g">Wikidata item</a>
+          </li>
+          <li class="last-title">
+            <a href="https://en.wikipedia.org/w/index.php?title=Special:CiteThisPage&page=Communist_Mutants_from_Space&id=724674958"
+               title="Information on how to cite this page">Cite this page</a>
+          </li>
+        </div>
+        <div id="Print-export">
+          <h4 id="navigation-head">Print/export</h3>
+          <li class="nav-titles">
+            <a href="https://en.wikipedia.org/w/index.php?title=Special:Book&bookcmd=book_creator&referer=Communist+Mutants+from+Space"
+            >Create a book</a>
+          </li>
+          <li class="nav-titles">
+            <a href="https://en.wikipedia.org/w/index.php?title=Special:Book&bookcmd=render_article&arttitle=Communist+Mutants+from+
+                     Space&returnto=Communist+Mutants+from+Space&oldid=724674958&writer=rdf2latex"
+            >Download as PDF</a>
+          </li>
+          <li class="last-title">
+            <a href="https://en.wikipedia.org/w/index.php?title=Communist_Mutants_from_Space&printable=yes"
+                 title="Printable version of this page [alt-shift-p]"
+                 accesskey="p">Printable version</a>
+          </li>
+        </div>
+        <div id="languages">
+          <h4 id="navigation-head">Languages</h4>
+          <li id="languages-button" class="lang-button">
+            <img src="http://releasenotes.docs.salesforce.com/en-us/winter16/release-notes/help/images/collab_chat_options.png"
+                   title="Language settings"></img>
+          </li>
+          <li class="nav-titles">
+            <a href="https://es.wikipedia.org/wiki/Mutantes_comunistas_del_espacio_exterior"
+               title="Mutantes comunistas del espacio exterior - Spanish"
+               >Español</a>
+          <li id="edit-links" class="lang-button">
+            <a href="https://www.wikidata.org/wiki/Q5154312#sitelinks-wikipedia"
+               title="Edit interlanguage links">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKBAMAAAB/HNKOAAAAD1BMVEUZAAD///95eXmqqqrY2NjEIQ0c
+              AAAAAXRSTlMAQObYZgAAACdJREFUCNdjYGBgYGIAASUFENNJCUiqmADZTM5OqExFFZAKRSG4YgBjcwODynSgDwAAAABJRU5ErkJggg=="></img>  
+              Edit links</a>
+          </li>
+        </div>
+</body>
+</html>
